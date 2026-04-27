@@ -1,0 +1,15 @@
+api_version = "2026-01"
+
+[[extensions]]
+name = "account-nav-link"
+handle = "account-nav-link"
+type = "ui_extension"
+uid = "1ab95371-0110-cfff-4610-36c08ae30e1734fcdeb0"
+
+[[extensions.targeting]]
+module = "./src/PageExtension.jsx"
+target = "customer-account.page.render"
+handle = "account-nav-link-page"
+
+[extensions.capabilities]
+api_access = true
