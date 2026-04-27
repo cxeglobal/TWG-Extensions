@@ -1,0 +1,39 @@
+api_version = "2026-01"
+
+[[extensions]]
+name = "Checkout PO"
+handle = "po-field"
+type = "ui_extension"
+uid = "f10daf8d-3029-4001-b4b2-677cc8698c733fe395e0"
+
+[[extensions.targeting]]
+module = "./src/Checkout.jsx"
+target = "purchase.checkout.actions.render-before"
+
+[extensions.capabilities]
+api_access = true
+
+# ✅ Updated metafield for PO Number
+[[extensions.metafields]]
+namespace = "custom"
+key = "po_number"
+
+# ✅ Add these settings
+[extensions.settings]
+  [[extensions.settings.fields]]
+  key = "heading"
+  type = "single_line_text_field"
+  name = "Section Heading"
+  description = "Title shown above the PO field (e.g. Open Account)"
+
+  [[extensions.settings.fields]]
+  key = "description"
+  type = "single_line_text_field"
+  name = "Description Text"
+  description = "Subtext shown below the heading"
+
+  [[extensions.settings.fields]]
+  key = "field_label"
+  type = "single_line_text_field"
+  name = "Field Label"
+  description = "Label shown inside the PO Number input"
