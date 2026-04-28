@@ -9,7 +9,11 @@ uid = "1ab95371-0110-cfff-4610-36c08ae30e1734fcdeb0"
 [[extensions.targeting]]
 module = "./src/PageExtension.jsx"
 target = "customer-account.page.render"
-handle = "account-nav-link-page"
+handle = "account-nav-link-page" 
 
 [extensions.capabilities]
 api_access = true
+network_access = true          # ← KEY LINE — allows fetch()
+
+[[extensions.allowed_origins]]
+url = "https://api.thewheelgroup.info"   # ← whitelists the API domain

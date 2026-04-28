@@ -10,7 +10,10 @@
     "generate": "shopify app generate",
     "deploy": "shopify app deploy"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jspdf": "^4.2.1",
+    "pdfkit": "^0.18.0"
+  },
   "trustedDependencies": [
     "@shopify/plugin-cloudflare"
   ],
