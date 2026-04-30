@@ -17,6 +17,8 @@ declare namespace preact.JSX {
     // Forms
     's-text-field': any;
 
+    's-section': any
+    
     // Feedback
     's-banner': any;
 
