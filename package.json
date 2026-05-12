@@ -11,6 +11,7 @@
     "deploy": "shopify app deploy"
   },
   "dependencies": {
+    "@shopify/ui-extensions-react": "^2025.7.3",
     "amazon-cognito-identity-js": "^6.3.16",
     "jspdf": "^4.2.1",
     "pdfkit": "^0.18.0"
