@@ -11,6 +11,10 @@ module = "./src/PageExtension.jsx"
 target = "customer-account.page.render"
 handle = "account-nav-link-page" 
 
+[[extensions.metafields]]
+namespace = "custom"
+key = "customer_number"
+
 [extensions.capabilities]
 api_access = true
 network_access = true          # ← KEY LINE — allows fetch()

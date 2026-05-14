@@ -28,6 +28,10 @@ declare namespace preact.JSX {
     's-table-header-cell': any;
     's-table-cell': any;
      's-grid': any;
+     's-box' : any;
+     's-query-container': any;
+     's-grid-item': any;
+     's-date-field': any;
   }
 }
 
